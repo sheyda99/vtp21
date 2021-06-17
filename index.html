@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sheyda Sultanova">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | VTP'21 Yay</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section id="sidebar" class="col-2" style="width: 270px;">
+            <div class="d-flex flex-column ps-3 pe-3">
+                <div id="btn" class="toggle-btn d-flex">
+                    <i class="fas fa-bars align-self-center"></i>
+                </div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item mb-1">
+                        <a href="index.html" class="nav-link active" aria-current="page">
+                            <i class="fas fa-home"></i>
+                            <span class="section-name" style="display: inline-block;">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#members-collapse" aria-expanded="true">
+                            <i class="fas fa-users"></i>
+                            <span class="section-name" style="display: inline-block;">
+                                <span class="dropdown-toggle">Members</span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="members-collapse">
+                            <ul class="dropdown p-0 mb-3">
+                                <li><a href="acc-members.html">Accounting & Finance</a></li>
+                                <li><a href="it-members.html">Information Technology</a></li>
+                                <li><a href="lp-members.html">Logistics & Purchasing</a></li>
+                                <li><a href="hr-members.html">Human Resources</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="events-calendar.html" class="nav-link">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="section-name" style="display: inline-block;">Events Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <nav id="navbar" class="navbar navbar-dark">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="heading offset-4 col-4">
+                        <a class="navbar-brand" href="index.html"><h1 class="text-center m-0">VTP'21 Yay</h1></a>
+                    </div>
+                    <div class="user col-4">
+                        <div class="text-end">
+                            <div class="btn-group">
+                                <button type="button" class="btn p-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/avatar-profile-pic.png" alt="Profile picture" class="user-img">
+                                    <span>User</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item" type="button">Profile</a></li>
+                                    <li><a href="login.html" class="dropdown-item" type="button">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-left: 270px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">Total members</span>
+                                <span class="number">70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-1 col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">ACC</span>
+                                <span class="number">17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">IT</span>
+                                <span class="number">20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">LP</span>
+                                <span class="number">15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">HR</span>
+                                <span class="number">18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="charts" class="pt-5 pb-5">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <h3 class="text-center">AGE</h3>
+                        <div class="chart pt-5">
+                            <canvas id="ageChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="text-center">GENDER</h3>
+                        <div class="chart ps-5 pe-5">
+                            <canvas id="genderChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="text-center">ACADEMIC DEGREE</h3>
+                        <div class="chart ps-5 pe-5">
+                            <canvas id="degreeChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="text-center">DEPARTMENT</h3>
+                        <div class="chart pt-5">
+                            <canvas id="departmentChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        new Chart("ageChart", {
+            type: "bar",
+            data: {
+                labels: [18, 19, 20, 21, 22, 23, 24],
+                datasets: [{
+                    label: 'AGE',
+                    backgroundColor: ["#4f81bc", "#c0504e","#9bbb58","#23bfaa","#8064a1", "#4aacc5", "#f79647"],
+                    data: [8, 10, 19, 21, 9, 2, 1]
+                }]
+            }
+        });
+
+        new Chart("genderChart", {
+            type: "pie",
+            data: {
+                labels: ["Male", "Female"],
+                datasets: [{
+                    label: 'GENDER',
+                    backgroundColor: ["#4f81bc", "#c0504e"],
+                    data: [21, 49]
+                }]
+            }
+        });
+
+        new Chart("degreeChart", {
+            type: "doughnut",
+            data: {
+                labels: ["bachelors", "master"],
+                datasets: [{
+                    label: 'ACADEMIC DEGREE',
+                    backgroundColor: ["#4f81bc", "#c0504e"],
+                    data: [65, 5]
+                }]
+            }
+        });
+
+        new Chart("departmentChart", {
+            type: "bar",
+            data: {
+                labels: ["ACC", "IT", "LP", "HR"],
+                datasets: [{
+                    label: 'DEPARTMENT',
+                    backgroundColor: ["#4f81bc", "#c0504e","#9bbb58","#23bfaa"],
+                    data: [17, 20, 15, 18]
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

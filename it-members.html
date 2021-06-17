@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sheyda Sultanova">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Technologies | VTP'21 Yay</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section id="sidebar" class="col-2" style="width: 270px;">
+            <div class="d-flex flex-column ps-3 pe-3">
+                <div id="btn" class="toggle-btn d-flex">
+                    <i class="fas fa-bars align-self-center"></i>
+                </div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item mb-1">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span class="section-name" style="display: inline-block;">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#members-collapse" aria-expanded="true">
+                            <i class="fas fa-users"></i>
+                            <span class="section-name" style="display: inline-block;">
+                                <span class="dropdown-toggle">Members</span>
+                            </span>
+                        </a>
+                        <div class="collapse show" id="members-collapse">
+                            <ul class="dropdown p-0 mb-3">
+                                <li><a href="acc-members.html">Accounting & Finance</a></li>
+                                <li><a href="it-members.html" class="active" aria-current="page">Information Technologies</a></li>
+                                <li><a href="lp-members.html">Logistics & Purchasing</a></li>
+                                <li><a href="hr-members.html">Human Resources</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="events-calendar.html" class="nav-link">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="section-name" style="display: inline-block;">Events Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <nav id="navbar" class="navbar navbar-dark">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="heading offset-4 col-4">
+                        <a class="navbar-brand" href="index.html"><h1 class="text-center m-0">VTP'21 Yay</h1></a>
+                    </div>
+                    <div class="user col-4">
+                        <div class="text-end">
+                            <div class="btn-group">
+                                <button type="button" class="btn p-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/avatar-profile-pic.png" alt="Profile picture" class="user-img">
+                                    <span>User</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item" type="button">Profile</a></li>
+                                    <li><a href="login.html" class="dropdown-item" type="button">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-left: 270px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">Total members</span>
+                                <span class="number">70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-1 col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">ACC</span>
+                                <span class="number">17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">IT</span>
+                                <span class="number">20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">LP</span>
+                                <span class="number">15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">HR</span>
+                                <span class="number">18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="member-table">
+                <div class="table-header row mb-4">
+                    <div class="col-6">
+                        <h2>Information Technologies</h2>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Full name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">University</th>
+                            <th scope="col">Faculty</th>
+                            <th scope="col">Academic degree</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Abuzər Kərimzadə</td>
+                            <td>18</td>
+                            <td>Kişi</td>
+                            <td>Bakı Mühəndislik Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Arzu Teymurova</td>
+                            <td>19</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Respublikasının Prezidenti yanında Dövlət İdarəçilik Akademiyası</td>
+                            <td>Kompüter elmləri</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Asif Mustafayev</td>
+                            <td>20</td>
+                            <td>Kişi</td>
+                            <td>Azərbaycan Dövlət Neft və Sənaye Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Çinarə Gülhüseynova</td>
+                            <td>21</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Texniki Univsersiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Günel Cabbarlı</td>
+                            <td>21</td>
+                            <td>Qadın</td>
+                            <td>Ege Üniversitesi</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>master</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Hafizəxanım Valehzadə</td>
+                            <td>19</td>
+                            <td>Qadın</td>
+                            <td>Bakı Mühəndislik Universiteti</td>
+                            <td>Kompüter mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Hümarə Həsənova</td>
+                            <td>22</td>
+                            <td>Qadın</td>
+                            <td>ADA Universiteti</td>
+                            <td>Beynəlxalq əlaqələr</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Nərgiz Hüseynova</td>
+                            <td>21</td>
+                            <td>Qadın</td>
+                            <td>Bakı Mühəndislik Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Nəzər Nəzərəliyev</td>
+                            <td>20</td>
+                            <td>Kişi</td>
+                            <td>Azərbaycan Texniki Univsersiteti</td>
+                            <td>Kompüter mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Nihad Qurbanlı</td>
+                            <td>19</td>
+                            <td>Kişi</td>
+                            <td>Xəzər Universiteti</td>
+                            <td>Kompüter mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Nuray Demirçiyeva</td>
+                            <td>21</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan-Fransız Universiteti</td>
+                            <td>Geofizika mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Rəfiqə Nəzərova</td>
+                            <td>22</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Texniki Univsersiteti</td>
+                            <td>İnformasiya mühafizəsi və təhlükəsizliyi</td>
+                            <td>master</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Şahrza Qəhrəmanov</td>
+                            <td>20</td>
+                            <td>Kişi</td>
+                            <td>Azərbaycan Dövlət İqtisad Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Şeyda Sultanova</td>
+                            <td>18</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Respublikasının Prezidenti yanında Dövlət İdarəçilik Akademiyası</td>
+                            <td>Kompüter elmləri</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Şəfa Şahgəldiyeva</td>
+                            <td>22</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Dövlət İqtisad Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>master</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Taleh Məmmədov</td>
+                            <td>23</td>
+                            <td>Kişi</td>
+                            <td>Xəzər Universiteti</td>
+                            <td>Kompüter mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Xəyalə Həziyeva</td>
+                            <td>20</td>
+                            <td>Qadın</td>
+                            <td>ADA Universiteti</td>
+                            <td>İnformasiya texnologiyaları</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Xumar Hüseynzadə</td>
+                            <td>19</td>
+                            <td>Qadın</td>
+                            <td>Azərbaycan Dövlət Neft və Sənaye Universiteti</td>
+                            <td>Sistem mühəndisliyi</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Zaur Şərifov</td>
+                            <td>21</td>
+                            <td>Kişi</td>
+                            <td>Muğla Sıtkı Koçman Üniversitesi</td>
+                            <td>Bilişim sistemleri mühendisliği</td>
+                            <td>bachelors</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Zərqələm Hüseynova</td>
+                            <td>20</td>
+                            <td>Qadın</td>
+                            <td>Bakı Dövlət Universiteti</td>
+                            <td>Kompüter elmləri</td>
+                            <td>bachelors</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

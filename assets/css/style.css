@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster-Regular.ttf');
+}
+:root{
+    --green-color: #35c677;
+    --lightgreen-color: #eaf9f1;
+}
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--lightgreen-color);
+    font-family: 'Dosis';
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-green {
+    color: var(--green-color) !important;
+    font-size: 16px;
+}
+.link-green:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.btn-green {
+    background-color: var(--green-color);
+    color: var(--lightgreen-color) !important;
+}
+.btn-green:hover {
+    background-color: #2b9c5e;
+}
+.btn-outline-green {
+    background-color: transparent;
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+.btn-outline-green:hover {
+    background-color: var(--green-color);
+    color: var(--lightgreen-color);
+}
+
+
+/**** TOP NAVBAR ****/
+#navbar {
+    background-color: var(--green-color);
+    height: 65px;
+    box-shadow: 1px 1px 7px 1px #ccc;
+}
+#navbar .heading h1 {
+    font-family: 'Lobster';
+    line-height: 48px;
+    font-size: 45px;
+}
+#navbar .user .btn-group {
+    height: 45px;
+    margin: 2px 0 10px;
+}
+#navbar .user .btn-group .dropdown-toggle {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--lightgreen-color);
+    box-shadow: none;
+}
+#navbar .user .user-img {
+    height: 100%;
+    border-radius: 50%;
+}
+#navbar .user .dropdown-menu .dropdown-item:hover {
+    background-color: var(--lightgreen-color);
+}
+#navbar .user .dropdown-menu .dropdown-item:active {
+    background-color: var(--green-color);
+}
+
+
+/**** SIDEBAR ****/
+#sidebar {
+    height: 100%;
+    background-color: var(--green-color);
+    position: fixed;
+    z-index: 3;
+    transition: 0.5s;
+}
+#sidebar .toggle-btn {
+    padding: 24px 16px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn i {
+    font-size: 26px;
+    color: var(--lightgreen-color);
+}
+#sidebar .nav-pills .nav-item {
+    font-size: 20px;
+}
+#sidebar .nav-pills .nav-item a {
+    color: var(--lightgreen-color);
+    border-left: 4px solid var(--green-color);
+    border-radius: 0%;
+}
+#sidebar .nav-pills .nav-item a:hover {
+    border-color: var(--lightgreen-color);
+}
+#sidebar .nav-pills .nav-item a.active {
+    color: var(--green-color);
+    background-color: var(--lightgreen-color);
+    border-color: var(--lightgreen-color);
+}
+#sidebar .dropdown li a {
+    width: 100%;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 32px;
+}
+
+
+/**** MAIN SECTION ****/
+main {
+    padding: 20px 0;
+    transition: 0.5s;
+}
+
+.card {
+    padding: 5px 0;
+    margin-bottom: 40px;
+    border-color: var(--green-color);
+    border-width: 2px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px 1px #ddd;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card:hover {
+    box-shadow: 1px 1px 7px 1px #aaa;
+}
+.card i {
+    font-size: 35px;
+    color: var(--green-color);
+    padding: 10px 15px;
+}
+.card span {
+    display: inline-block;
+    width: 100%;
+}
+.card .department {
+    font-size: 20px;
+}
+.card .number {
+    color: var(--green-color);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#charts,
+#member-table,
+#events-calendar {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--green-color);
+    border-radius: 10px;
+}
+
+
+/**** HOME PAGE ****/
+#charts > .row {
+    width: 900px;
+    margin: 0 auto;
+}
+#charts .chart {
+    height: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #35c677;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+#charts h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/**** MEMBERS PAGE ****/
+#member-table .table-header h2 {
+    color: #fff;
+}
+#member-table form input {
+    float: right;
+    max-width: 200px;
+}
+#member-table .table {
+    background-color: #fff;
+}
+#member-table .table thead tr,
+#member-table .table tbody tr:nth-child(even) {
+    background-color: var(--lightgreen-color);
+}
+
+
+/**** EVENTS CALENDAR PAGE ****/
+#calendar .fc-header {
+    background-color: transparent;
+    color: var(--lightgreen-color);
+    font-family: 'Dosis';
+}
+
+#calendar thead tr {
+    background-color: var(--lightgreen-color);
+    color: var(--green-color);
+}
+#calendar thead tr th {
+    font-weight: bold;
+}
+#calendar table th,
+#calendar table td {
+    border-color: #35c67657;
+}
+
+#calendar .fc-content {
+    background-color: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+#calendar .fc-content tbody {
+    cursor: pointer;
+}
+
+.fc-state-default {
+    border-color: var(--lightgreen-color);
+    color: var(--lightgreen-color);
+}
+.fc-state-hover,
+.fc-state-disabled {
+    background-color: var(--lightgreen-color);
+    color: var(--green-color);
+}
+
+.fc-cell-overlay {
+    background-color: var(--green-color);
+}
+.fc-today .fc-day-number {
+    background-color: var(--green-color) !important;
+}
+
+.fc-event {
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 0 5px;
+}
+
+
+/**** LOGIN PAGE ****/
+#login {
+    height: calc(100vh - 65px);
+}
+#login > section {
+    width: 600px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 2px rgb(20 23 28 / 15%);
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 50px 70px;
+}
+#login .form-control:focus {
+    box-shadow: none;
+    border-color: var(--green-color);
+}
+#login form .form-check-input:checked {
+    background-color: var(--green-color);
+    border: var(--green-color);
+}
+#login form label {
+    font-weight: bold;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sheyda Sultanova">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar | VTP'21 Yay</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link href='assets/css/fullcalendar.css' rel='stylesheet'>
+    <link href='assets/css/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <section id="sidebar" class="col-2" style="width: 270px;">
+            <div class="d-flex flex-column ps-3 pe-3">
+                <div id="btn" class="toggle-btn d-flex">
+                    <i class="fas fa-bars align-self-center"></i>
+                </div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item mb-1">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span class="section-name" style="display: inline-block;">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#members-collapse" aria-expanded="true">
+                            <i class="fas fa-users"></i>
+                            <span class="section-name" style="display: inline-block;">
+                                <span class="dropdown-toggle">Members</span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="members-collapse">
+                            <ul class="dropdown p-0 mb-3">
+                                <li><a href="acc-members.html">Accounting & Finance</a></li>
+                                <li><a href="it-members.html">Information Technology</a></li>
+                                <li><a href="lp-members.html">Logistics & Purchasing</a></li>
+                                <li><a href="hr-members.html">Human Resources</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="events-calendar.html" class="nav-link active" aria-current="page">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="section-name" style="display: inline-block;">Events Calendar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <nav id="navbar" class="navbar navbar-dark">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="heading offset-4 col-4">
+                        <a class="navbar-brand" href="index.html"><h1 class="text-center m-0">VTP'21 Yay</h1></a>
+                    </div>
+                    <div class="user col-4">
+                        <div class="text-end">
+                            <div class="btn-group">
+                                <button type="button" class="btn p-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/avatar-profile-pic.png" alt="Profile picture" class="user-img">
+                                    <span>User</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item" type="button">Profile</a></li>
+                                    <li><a href="login.html" class="dropdown-item" type="button">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-left: 270px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">Total members</span>
+                                <span class="number">70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-1 col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">ACC</span>
+                                <span class="number">17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">IT</span>
+                                <span class="number">20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">LP</span>
+                                <span class="number">15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="department">HR</span>
+                                <span class="number">18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="events-calendar">
+                <div class="alert alert-light" role="alert">
+                    <i class="fas fa-info-circle"></i>
+                    You can add a new event by click on <u>a day</u> or selecting <u>multiple days</u>.
+                </div>
+                <div id="calendar-container">
+                    <div id="calendar"></div>
+                    <div style='clear:both'></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src='assets/js/jquery-1.10.2.js' type="text/javascript"></script>
+	<script src='assets/js/jquery-ui.custom.min.js' type="text/javascript"></script>
+	<script src='assets/js/fullcalendar.js' type="text/javascript"></script>
+
+    <script>
+		$(document).ready(function () {
+			var date = new Date();
+			var d = date.getDate();
+			var m = date.getMonth();
+			var y = date.getFullYear();
+
+			$('#external-events div.external-event').each(function () {
+				var eventObject = {
+					title: $.trim($(this).text())
+				};
+				$(this).data('eventObject', eventObject);
+				$(this).draggable({
+					zIndex: 999,
+					revert: true,
+					revertDuration: 0
+				});
+
+			});
+
+			var calendar = $('#calendar').fullCalendar({
+				header: {
+					left: 'title',
+					center: '',
+					right: 'prev,next today'
+				},
+				editable: true,
+				firstDay: 1,
+				selectable: true,
+				defaultView: 'month',
+				axisFormat: 'h:mm',
+				columnFormat: {
+					month: 'ddd',
+					week: 'ddd d',
+					day: 'dddd M/d',
+					agendaDay: 'dddd d'
+				},
+				titleFormat: {
+					month: 'MMMM yyyy',
+					week: "MMMM yyyy",
+					day: 'MMMM yyyy'
+				},
+				allDaySlot: false,
+				selectHelper: true,
+				select: function (start, end, allDay) {
+					var title = prompt('Event Title:');
+					if (title) {
+						calendar.fullCalendar('renderEvent',
+							{
+								title: title,
+								start: start,
+								end: end,
+								allDay: allDay
+							},
+							true
+						);
+					}
+					calendar.fullCalendar('unselect');
+				},
+				droppable: true,
+				drop: function (date, allDay) {
+					var originalEventObject = $(this).data('eventObject');
+					var copiedEventObject = $.extend({}, originalEventObject);
+					copiedEventObject.start = date;
+					copiedEventObject.allDay = allDay;
+					$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+					if ($('#drop-remove').is(':checked')) {
+						$(this).remove();
+					}
+				},
+				events: [
+                    {
+						title: 'Meeting with project parters',
+						start: new Date(y, m, d-5),
+                        end: new Date(y, m, d-4)
+					},
+                    {
+						title: '2-day event',
+						start: new Date(y, m, d-4),
+                        end: new Date(y, m, d-3)
+					},
+					{
+						title: 'Online meeting',
+						start: new Date(y, m, d+1)
+					}
+				],
+			});
+		});
+	</script>
+</body>
+</html>

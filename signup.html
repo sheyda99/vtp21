@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sheyda Sultanova">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | VTP'21 Yay</title>
+    <script src="https://kit.fontawesome.com/f9a01ea1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-dark">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="heading col-12 text-center">
+                        <a class="navbar-brand" href="index.html"><h1 class="text-center m-0">VTP'21 Yay</h1></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="login">
+        <section>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="university" class="form-label">University</label>
+                    <input type="text" class="form-control" id="university">
+                </div>
+                <div class="mb-3">
+                    <label for="faculty" class="form-label">Faculty</label>
+                    <input type="text" class="form-control" id="faculty">
+                </div>
+                <div class="mb-3">
+                    <label for="degree" class="form-label">Academic degree</label>
+                    <select class="form-select" id="degree">
+                        <option value="bachelors">bachelors</option>
+                        <option value="master">master</option>
+                        <option value="graduated">graduated</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="department" class="form-label">Department</label>
+                    <select class="form-select" id="department">
+                        <option value="acc">Accounting & Finance</option>
+                        <option value="it">Information Technologies</option>
+                        <option value="lp">Logistics & Purchasing</option>
+                        <option value="hr">Human Resources</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="mb-5">
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password">
+                </div>
+                <div class="mb-1 d-grid gap-2">
+                    <a href="login.html" type="submit" class="btn btn-green">Register</a>
+                </div>
+                <div class="text-center">
+                    <hr><p class="mb-0">Already have account?</p>
+                    <a href="login.html" class="link-green">Log In</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
